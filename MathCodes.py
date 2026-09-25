@@ -10,27 +10,28 @@ class Soma:
         self.vetorA2 = vetorA2
         self.vetorB2 = vetorB2
 
-    def VetoresNumpy(self, vetorA1, vetorA2 ,vetorB1 , vetorB2):
+    def VetoresNumpy(self):
         x = np.array([self.vetorA1, self.vetorA2])
         y = np.array([self.vetorB1, self.vetorB2])
-        return f"Os vetores são: {x} e {y}"
+        return x, y
 
-    def Calcular_VetoresNumpy(x,y):
-        soma = x + y        
+    def Calcular_VetoresNumpy(self, x, y):
+        soma = x + y
         return soma
 
-class Subtração:
+class Subtracao:
     def __init__(self, vetorA1, vetorA2, vetorB1, vetorB2):
         self.vetorA1 = vetorA1
         self.vetorA2 = vetorA2
         self.vetorB1 = vetorB1
         self.vetorB2 = vetorB2
 
-    def VetoresNumpy(self, vetorA1, vetorA2 ,vetorB1 , vetorB2):
-        x = np.array([vetorA1, vetorA2])
-        y = np.array([vetorB1, vetorB2])
-        return f"Os vetores são: {x} e {y}"
+    def VetoresNumpy(self):
+        x = np.array([self.vetorA1, self.vetorA2])
+        y = np.array([self.vetorB1, self.vetorB2])
+        return x, y
 
-    def Calcular_VetoresNumpy(x,y):
-        soma = x - y
-        return soma
+    def Calcular_VetoresNumpy(self, x, y):
+        subtracao = x - y
+        return subtracao
+
